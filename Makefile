@@ -1,4 +1,3 @@
-CC=${CROSS_COMPILE}gcc
 all: dir binary
 
 dir:
