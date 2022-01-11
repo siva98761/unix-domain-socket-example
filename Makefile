@@ -1,3 +1,4 @@
+CC=${CROSS_COMPILE}gcc
 all: dir binary
 
 dir:
@@ -6,7 +7,7 @@ dir:
 binary: server client
 
 server:
-	gcc -o bin/server server.c
+	${CC} -o bin/server server.c
 
 client:
-	gcc -o bin/client client.c
+	${CC} -o bin/client client.c
